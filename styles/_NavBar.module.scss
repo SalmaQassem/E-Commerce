@@ -1,0 +1,22 @@
+@use "../helpers/mixins" as *;
+@use "./variables/colors" as *;
+.header {
+  height: 9.0625rem;
+  background-color: $black-2;
+  .navWrapper {
+    height: 100%;
+    @include flex-variant(flex, $direction: column, $justify: center);
+    .navbar {
+      @include flex-variant(flex, $direction: row, $justify: space-between);
+      .logoWrapper {
+        @include flex-row-center();
+        .logo {
+          width: 6.34625rem;
+          height: 3.154375rem;
+          display: inline-block;
+          position: relative;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@use "../helpers/mixins" as *;
+.wrapper {
+  min-height: 100vh;
+  @include flex-variant(flex, $direction: column, $justify: space-between);
+}

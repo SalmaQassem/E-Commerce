@@ -1,0 +1,28 @@
+@use "../helpers/mixins" as *;
+@use "./variables/mediaQuery" as *;
+.container {
+  height: 100%;
+  padding: 0 0.9375rem;
+  margin-right: auto;
+  margin-left: auto;
+  @include mediaQuery($smallScreen_min_width) {
+    & {
+      max-width: 540px;
+    }
+  }
+  @include mediaQuery($medScreen_min_width) {
+    & {
+      max-width: 720px;
+    }
+  }
+  @include mediaQuery($largeScreen_min_width) {
+    & {
+      max-width: 960px;
+    }
+  }
+  @include mediaQuery($XlargeScreen_min_width) {
+    & {
+      max-width: 73.125rem;
+    }
+  }
+}

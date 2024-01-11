@@ -1,0 +1,13 @@
+@use "./variables/global" as *;
+.card {
+  height: 75.9375rem;
+  border-radius: $b-r-15;
+  overflow: hidden;
+  .img {
+    height: 36.8125rem;
+    width:100%;
+    position: relative;
+    background-image: linear-gradient(#84bfe1, #ffffff00);
+    object-fit:cover;
+  }
+}
